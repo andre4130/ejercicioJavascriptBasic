@@ -31,22 +31,14 @@ function suma (num1,num2) {
   }
 
 // ejercicio 6
-
+//
 var colorCoche = ("tengo un coche de color verde");
 console.log(colorCoche);
 var azul = colorCoche.replace ("verde", "azul");
 console.log(azul);
-
-var newAzul = [];
-for (var i = 0; i < azul.length; i++) {
-if(azul[i] == "o"){
-newAzul.push("u");
-  console.log(i);
-}
- else {
- newAzul.push(azul[i]);
-}};
-   console.log(newAzul.join(''))
+let regEx = /o/g;
+let newAzul = azul.replace(regEx,"u");
+console.log(newAzul);
 
 // ejercicio 7
 
